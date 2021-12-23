@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar-main" class="navbar navbar-expand-lg navbar-light">
+          <div class="container-lg">
+           <a href="index.html"><img src="https://createx.createx.studio/assets/img/online-courses/logo-dark.svg" alt="Createx Logo"
+                   width="130"></a>   
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                      aria-expanded="false" aria-label="Переключатель навигации">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <!--                    <ul class="navbar-nav me-auto text-nowrap ">-->
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item ms-4">
+                          <a class="nav-link" href="aboutus.html">About us</a>
+                      </li>
+                      <li class="nav-item dropdown ms-4">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                             data-bs-toggle="dropdown" aria-expanded="false">
+                              Courses
+                          </a>
+                          <ul class="dropdown-menu " aria-labelledby="navbarDropdown1">
+                              <li><a class="dropdown-item" href="courses.html">Courses grid</a></li>
+                              <li><a class="dropdown-item" href="courses2.html">Courses list</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item dropdown ms-4">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                             data-bs-toggle="dropdown" aria-expanded="false">
+                              Events
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                              <li><a class="dropdown-item" href="event-list3.html">Events grid</a></li>
+                              <li><a class="dropdown-item" href="event-list2.html">Events list</a></li>
+                              <li><a class="dropdown-item" href="event-list.html">Events sigle</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item dropdown ms-4">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
+                             data-bs-toggle="dropdown" aria-expanded="false">
+                              Blog
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                              <li><a class="dropdown-item" href="blog-grid.html">Blog grid</a></li>
+                              <li><a class="dropdown-item" href="blog-list.html">Blog list</a></li>
+
+                          </ul>
+                      </li>
+                      <li class="nav-item ms-4">
+                          <a class="nav-link" href="contact.html">Contacts</a>
+                      </li>
+                  </ul>
+              <button role="button" class="btn btn-primary border-0" type="submit">Explore courses</button>
+              <button type="button" class="btn sign-font border-0 ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="bi bi-person me-1"></i>Sign up / in</button>   
+              </div>
+          </div>
+      </nav>
+  </header>
+      <main>
+        <div class="text-center mt-5">
+          <h5>Our events</h5>
+          <h1>Lectures, workshops & master-classes</h1>
+        </div>
+        <div class="hidden container">
+          <div id="myBtnContainer" class="mb-3 ">
+            <button  class="btn mt-4 active ms-3  b-primary-all text-center align-items-center" onclick="filterSelection('all')"><span class="">ALL</span> </button>
+            <button  class="btn mt-4  ms-3 b-primary-sort text-center align-items-center" onclick="filterSelection('cars')" ><span class="">Marketing</span> </button>
+            <button  class="btn mt-4  ms-3 b-primary-sort text-center align-items-center " onclick="filterSelection('animals')"><span class="">Management</span> </button>
+            <button  class="btn mt-4  ms-3 b-primary-sort text-center align-items-center " onclick="filterSelection('fruits')"><span class="">HR & Recruting</span> </button>
+            <button  class="btn mt-4  ms-3 b-primary-sort text-center align-items-center " onclick="filterSelection('colors')"><span class="">Design</span> </button>
+            <button  class="btn mt-4  ms-3 b-primary-sort text-center align-items-center " onclick="filterSelection('cars')"><span class="">Development</span> </button>
+            </div>  
+            
+              <div class="col  ">
+                <div class="card mb-3  filterDiv cars   p-3 align-items-sm-center">
+                    <div class="d-flex flex-sm-row ">
+                  <div class="card-header bg-transparent border-0">
+                        <div class="d-flex align-items-center">
+                            <span class="display-4 fw-bolder mb-0 text-primary-custom">05</span>
+                            <div class="ms-3 ps-1">
+                                <h6 class="h5 mb-1">August</h6>
+                                <span class="text-muted">11:00 – 14:00</span>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="card-body  m-sm-4 py-0 px-sm-3">
+                        <h3 class="h5 mb-sm-1 mb-2">
+                            Formation of the organizational structure of the company in the face of uncertainty.
+                        </h3>
+                        <span class="text-muted">Online master-class</span>
+                    </div>
+                    <div class="card-footer bg-transparent my-sm-4 mt-5 me-sm-2 py-sm-2 px-sm-0 border-0">
+                        <a href="#" class="btn b-primary btn-hover-shadow d-sm-inline-block d-block">Join the course</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="col  ">
+            <div class="card mb-3 filterDiv animals   p-3 align-items-sm-center">
+                <div class="d-flex flex-sm-row ">
+              <div class="card-header bg-transparent border-0">
+                    <div class="d-flex align-items-center">
+                        <span class="display-4 fw-bolder mb-0 text-primary-custom">03</span>
+                        <div class="ms-3 ps-1">
+                            <h6 class="h5 mb-1">August</h6>
+                            <span class="text-muted">11:00 – 14:00</span>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="card-body m-sm-4 py-0 px-sm-3">
+                    <h3 class="h5 mb-sm-1 mb-2">
+                        Formation of the organizational structure of the company in the face of uncertainty.
+                    </h3>
+                    <span class="text-muted">Online master-class</span>
+                </div>
+                <div class="card-footer bg-transparent my-sm-4 mt-5 me-sm-2 py-sm-2 px-sm-0 border-0">
+                    <a href="#" class="btn b-primary btn-hover-shadow d-sm-inline-block d-block">Join the course</a>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="col ">
+        <div class="card mb-3 filterDiv colors   p-3 align-items-sm-center">
+            <div class="d-flex flex-sm-row ">
+          <div class="card-header bg-transparent border-0">
+                <div class="d-flex align-items-center">
+                    <span class="display-4 fw-bolder mb-0 text-primary-custom">24</span>
+                    <div class="ms-3 ps-1">
+                        <h6 class="h5 mb-1">July</h6>
+                        <span class="text-muted">11:00 – 14:00</span>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="card-body m-sm-4 py-0 px-sm-3">
+                <h3 class="h5 mb-sm-1 mb-2">
+                  Building a customer service department. Best Practices in Online master-class
+                </h3>
+                <span class="text-muted">Online master-class</span>
+            </div>
+            <div class="card-footer bg-transparent my-sm-4 mt-5 me-sm-2 py-sm-2 px-sm-0 border-0">
+                <a href="#" class="btn b-primary btn-hover-shadow d-sm-inline-block d-block">Join the course</a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="col ">
+    <div class="card mb-3 filterDiv animals  p-3 align-items-sm-center">
+        <div class="d-flex flex-sm-row ">
+      <div class="card-header bg-transparent border-0">
+            <div class="d-flex align-items-center">
+                <span class="display-4 fw-bolder mb-0 text-primary-custom">16</span>
+                <div class="ms-3 ps-1">
+                    <h6 class="h5 mb-1">August</h6>
+                    <span class="text-muted">11:00 – 14:00</span>
+                </div>
+            </div>
+        </div>
+      
+        <div class="card-body m-sm-4 py-0 px-sm-3">
+            <h3 class="h5 mb-sm-1 mb-2">
+              How to apply methods of speculative design in practice. Worldbuilding prototyping.
+            </h3>
+            <span class="text-muted">Online master-class</span>
+        </div>
+        <div class="card-footer bg-transparent my-sm-4 mt-5 me-sm-2 py-sm-2 px-sm-0 border-0">
+            <a href="#" class="btn b-primary btn-hover-shadow d-sm-inline-block d-block">Join the course</a>
+        </div>
+    </div>
+</div>
+</div>
+          
+<div class="col ">
+  <div class="card mb-3 filterDiv colors   p-3 align-items-sm-center">
+      <div class="d-flex flex-sm-row ">
+    <div class="card-header bg-transparent border-0">
+          <div class="d-flex align-items-center">
+              <span class="display-4 fw-bolder mb-0 text-primary-custom">10</span>
+              <div class="ms-3 ps-1">
+                  <h6 class="h5 mb-1">August</h6>
+                  <span class="text-muted">11:00 – 14:00</span>
+              </div>
+          </div>
+      </div>
+    
+      <div class="card-body m-sm-4 py-0 px-sm-3">
+          <h3 class="h5 mb-sm-1 mb-2">
+            Find and evaluate: search and assessment tools for candidates in Online master-class
+          </h3>
+          <span class="text-muted">Online master-class</span>
+      </div>
+      <div class="card-footer bg-transparent my-sm-4 mt-5 me-sm-2 py-sm-2 px-sm-0 border-0">
+          <a href="#" class="btn b-primary btn-hover-shadow d-sm-inline-block d-block">Join the course</a>
+      </div>
+  </div>
+</div>
+</div>
+<div class="col ">
+  <div class="card mb-3 filterDiv fruits   p-3 align-items-sm-center">
+      <div class="d-flex flex-sm-row ">
+    <div class="card-header bg-transparent border-0">
+          <div class="d-flex align-items-center">
+              <span class="display-4 fw-bolder mb-0 text-primary-custom">27</span>
+              <div class="ms-3 ps-1">
+                  <h6 class="h5 mb-1">August</h6>
+                  <span class="text-muted">11:00 – 14:00</span>
+              </div>
+          </div>
+      </div>
+    
+      <div class="card-body m-sm-4 py-0 px-sm-3">
+          <h3 class="h5 mb-sm-1 mb-2">
+            Connection to Microsoft Excel and Google Sheets, Data Visualization in Power BI.
+          </h3>
+          <span class="text-muted">Online master-class</span>
+      </div>
+      <div class="card-footer bg-transparent my-sm-4 mt-5 me-sm-2 py-sm-2 px-sm-0 border-0">
+          <a href="#" class="btn b-primary btn-hover-shadow d-sm-inline-block d-block">Join the course</a>
+      </div>
+  </div>
+</div>
+</div>
+          
+    </main>
+    <div class="container-fluid mt-5 ">
+      <div class="row ">
+        <div style="background-color: #ffcecc" class="pb-5">
+            <h5 class="text-center  mt-5">DON’T MISS ANYTHING</h5>
+            <h1 class="text-center">Subscribe to the Createx School announcements</h1>
+            <div class="d-flex justify-content-center ">
+                <div class="container d-flex justify-content-center mt-3">
+                <div class="col-lg-6 col-md-8 col-sm-10 ">
+                    <form class="input-group  mt-3" >
+                      <input class="form-control rounded "  placeholder="Your working email" >
+                      <button class="btn btn-form ms-md-4 ms-sm-3 ms-2 rounded">Subscribe</button>
+                    </form>
+                  </div>
+            </div></div>
+        </div>
+    </div>
+    </div>
+    <footer class="footer pt-sm-5 pt-4 bg-dark">
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-lg-3 ">
+            <a class="d-inline-block mb-4" href="">
+              <img src="https://createx.createx.studio/assets/img/online-courses/logo-light.svg" width="130" alt="">
+            </a>
+            <p class=" mb-3 text-light ">Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts. We provide relevant approaches to online learning, internships and employment in the largest companies in the country.</p>
+            
+          </div>
+    
+          <div class="col  mb-4">
+            <h3 class="h6 mb-2 pb-1  text-light">Site map</h3>
+            <ul class="nav nav-light flex-lg-column ">
+              <li class="nav-item mb-2">
+                <a href="" class="nav-link me-lg-0 me-sm-4 p-0 fw-normal">About Us</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="" class="nav-link me-lg-0 me-sm-4 p-0 fw-normal">Courses</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="" class="nav-link me-lg-0 me-sm-4 p-0 fw-normal">Events</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="" class="nav-link me-lg-0 me-sm-4 p-0 fw-normal">Blog</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="" class="nav-link me-lg-0 me-sm-4 p-0 fw-normal">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col mb-4">
+            <h3 class="h6 mb-2 pb-1  text-light">Courses</h3>
+            <ul class="nav nav-light flex-lg-column ">
+              <li class="nav-item mb-2">
+                <a href="courses.html" class="nav-link me-sm-4 p-0  ">Marketing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="courses.html" class="nav-link  me-sm-4 p-0 ">Management</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="courses.html" class="nav-link  me-sm-4 p-0">HR &amp; Recruting</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="courses.html" class="nav-link  me-sm-4 p-0 ">Design</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="courses.html" class="nav-link  me-sm-4 p-0">Development</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col mb-4">
+            <h3 class="h6 mb-2 pb-1 text-light">Contact us</h3>
+            <ul class="nav nav-light flex-md-column  ">
+              <li class="nav-item mb-2">
+                <a href="tel:(405)555-0128" class="nav-link  me-sm-4 p-0 ">
+                  
+                  (405) 555-0128
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="mailto:hello@example.com" class="nav-link me-sm-4 p-0 ">
+                  
+                  hello@example.com
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col mb-4">
+            <h3 class="h6 mb-2 pb-1 text-uppercase text-light">Sign up to our newsletter</h3>
+            <form>
+              <div class="input-group  mb-2 pb-1">
+                <input class="form-control pe-5 rounded" type="text" placeholder="Email address*">
+                
+              </div>
+              <small class="d-block form-text   text-light">*Subscribe to our newsletter to receive early discount offers, updates and new products info.</small>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div style="background-color: #292C37;">
+        <div class="container pt-2">
+          <div class="d-flex align-items-center justify-content-between py-1">
+            <div class=" text-light">
+              <span class="  mb-1">
+                <span >&copy; </span>
+                All rights reserved.
+              </span>
+              Made with 
+    
+              <a href="" class="text-light" >by Createx Studio</a>
+            </div>
+            <div class="d-flex align-items-center">
+              <button
+              type="button"
+              class="btn w-100 border-0  btn-primary  align-items-center   "
+              id="btn-back-to-top"
+              >
+              <i class="bi bi-arrow-up"></i> 
+      </button>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="container">
+              <div class="modal-body">
+                  <button type="button" class="btn-close position-absolute" style="top: 1.5rem; right: 1.5rem;" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h3 class="modal-title mt-4 mb-0 text-center">Sign in</h3>
+                  <p class="fs-sm text-muted text-center mt-3">Sign in to your account using email and password provided during registration.</p>
+                  <form class=" g-3 needs-validation" novalidate>
+                      <div class="col-md-4 w-100">
+                          <label for="validationCustom01" class="form-label">Email</label>
+                          <input type="text" class="form-control w-100" id="validationCustom01" value="demianmykhashchuk@gmail.com" required>
+                          <div class="valid-feedback">
+                              Все добре!
+                          </div>
+                      </div>
+                      <div class="col-md-4 w-100 mt-3">
+                          <label for="validationCustom01" class="form-label">Password</label>
+                          <input type="text" class="form-control w-100" id="validationCustom01"  required>
+                          <div class="valid-feedback">
+                              Все добре!
+                          </div>
+                      </div>
+                      
+                      
+                      <div class="col-12 mt-3">
+                          <div class="form-check">
+                             
+                                 <div class="col">
+                                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                  <label class="form-check-label" for="invalidCheck">
+                                      Remember me
+                                  </label>
+                                  <div class="invalid-feedback">
+                                      Вы должны принять перед отправкой.
+                                  </div>
+                                 
+                                 
+                              
+                          </div>
+                      </div>
+                      <div class="col-12 mt-3 mb-2">
+                         <button class="btn btn-form border-0 w-100" type="submit">Sing up</button>
+                      </div>
+                  </form>
+              </div>
+            </div>  
+                  
+              
+          </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script>
+    let mybutton = document.getElementById("btn-back-to-top");
+    
+    
+    window.onscroll = function () {
+    scrollFunction();
+    };
+    
+    function scrollFunction() {
+    if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+    ) {
+    mybutton.style.display = "block";
+    } else {
+    mybutton.style.display = "none";
+    }
+    }
+    
+    mybutton.addEventListener("click", backToTop);
+    
+    function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
+    </script>
+    <script>
+      //scroll menu add fixed
+      document.addEventListener("DOMContentLoaded", function () {
+          window.addEventListener('scroll', function () {
+              if (window.scrollY > 50) {
+                  document.getElementById('navbar-main').classList.add('fixed-top');
+                  // add padding top to show content behind navbar
+                  navbar_height = document.querySelector('.navbar').offsetHeight;
+                  document.body.style.paddingTop = navbar_height + 'px';
+              } else {
+                  document.getElementById('navbar-main').classList.remove('fixed-top');
+                  // remove padding top from body
+                  document.body.style.paddingTop = '0';
+              }
+          });
+      });
+  </script>
+    <script src="script.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

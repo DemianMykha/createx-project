@@ -1,0 +1,160 @@
+.hero{
+    background-color: #ffcccc;
+}
+.card-body-color{
+    background-color: whitesmoke;
+}
+
+.btn-white{
+    border: none;
+}
+.hero2{
+    width: 500px;
+}
+.c-red {
+    color:red;
+}
+.text-decoration{
+    text-decoration: none;
+    list-style: none;
+}
+.c-black{
+    color: black;
+}
+.bc-black{
+    background-color: #F4F5F6;
+}
+.btn-primary{
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    width: 201px;
+    height: 50px;
+    
+
+}
+.btn-outline-primary:hover{
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+   
+}
+li {
+    text-decoration: none;
+}
+.btn-order{
+    outline:none;
+}
+.icon-play{
+    font-size: 25px;
+}
+.c-orange{
+    color: #FF3F3A;
+}
+.text-size{
+    font-size: 46px;
+}
+.accordion{
+    border: 0px solid white;
+}
+.fz-20{
+
+
+font-weight: bold;
+font-size: 20px;
+
+}
+.hidden {
+    overflow: hidden;
+  }
+  
+  .filterDiv {
+    float: left;
+    
+    
+    
+    
+    
+    margin: 2px;
+    display: none; /* Hidden by default */
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+
+  /* Add a light grey background on mouse-over */
+ 
+  
+  /* Add a dark background to the active button */
+  .b-primary-sort{
+    background-color: white;
+    color: #505050;
+  }
+  .b-primary-sort:hover{
+    color: #FF3F3A;
+    border: 1px solid #FF3F3A;
+  }
+  .b-primary-all{
+    color: #FF3F3A;
+    border: 1px solid #FF3F3A;
+  }
+
+  .c-primary{
+       color: #FF3F3A;
+  }
+  .lato{
+    color: #424141;
+    font-style: normal;
+font-weight: bold;
+line-height: 150%;
+  }
+.float-start{
+    float: left;
+}
+.b-primary{
+    border: 1px solid #FF3F3A;
+    background-color: white;
+    color: #FF3F3A;
+}
+.b-primary:hover{
+    background-color: #FF3F3A;
+    color: white;
+}
+.bg-primary{
+    color: #FF3F3A;
+}
+.btn-border{
+    border: 1px solid #FF3F3A;
+    background-color: #ffcccc;
+    color: #FF3F3A;
+}
+.btn-border:hover{
+    background-color: #FF3F3A;
+    color: white;
+}
+.tab-style{
+    color: gray;
+}
+.tab-style:hover{
+    border: 1px solid #FF3F3A;
+    
+    color: #FF3F3A;
+}
+.tab-text{
+    color: gray;
+}
+.tab-text:hover{
+    color: #FF3F3A;
+}
+.img-h:hover{
+    background: linear-gradient(180deg, rgba(30, 33, 44, 0) 43.9%, rgba(30, 33, 44, 0.03) 55.21%, rgba(30, 33, 44, 0.33) 68.73%, rgba(30, 33, 44, 0.56) 76.17%, rgba(30, 33, 44, 0.768225) 83.75%, rgba(30, 33, 44, 0.92) 91.49%, #1E212C 100%);
+}
+.btn-tag{
+    border: 1px solid lightgray;
+}
+.c-gray{
+    color: grey;
+}
+.btn-back{
+    background-color: #FF3F3A;
+}
